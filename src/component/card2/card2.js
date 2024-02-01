@@ -1,6 +1,5 @@
 import styles from "./page.module.css"
 import { Star } from "lucide-react"
-import Button from "../button/button"
 
 const BookCard2 = ({ image, title, rating, description, price, prevPrice }) => {
     return (
