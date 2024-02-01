@@ -137,6 +137,8 @@ const Home = () => {
                 <div className="categories">
                     <CategoryList />
                 </div>
+
+                <hr className="visible" />
             </main>
         </section>
     );

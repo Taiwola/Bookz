@@ -227,6 +227,10 @@ code {
   margin-bottom: 25px;
 }
 
+.categories {
+  margin-bottom: 50px;
+}
+
 /* error */
 .errorContainer {
   text-align: center;
@@ -414,6 +418,11 @@ code {
   /* acknowledgement */
   .acknowledgement {
     margin-top: 60px
+  }
+
+  /* none */
+  .visible {
+    display: none;
   }
 }
 
