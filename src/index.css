@@ -1,8 +1,66 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3FB2E5;
+  --main-black: #3B3C3D
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, img, span, button, input {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, button {
+  background: none;
+  border: none;
+  font: inherit ;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style:none;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: var(--main-black);
+  background-color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +69,338 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* home */
+/* globalStyles.css */
+
+
+.container {
+ padding: 0 1rem;
+}
+
+.section {
+  margin-block-start: 100px;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero_content h1, .banner h1 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 45px;
+  text-align: center;
+  color: var(--main-black);
+}
+
+.hero_content p, .banner p {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  line-height: 21px;
+  color: #747171;
+}
+
+.hero_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Set the height of the container, adjust as needed */
+}
+
+.hero_img img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* offers */
+.offers {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.offer_container {
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 1fr; /* Two columns by default */
+  gap: 16px; /* Adjust the gap between items */
+
+  /* Centering the container */
+  justify-content: center;
+  align-items: center;
+}
+
+.offer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.offer_content h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3B3C3D;
+}
+
+.offer_content p {
+  font-weight: 600;
+  font-size: 10px;
+  color: #747171;
+}
+
+/* favourite */
+.favourites {
+  margin-top: 60px;
+}
+
+.favourite-img {
+  width: 226px;
+  height: 226px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.favourite-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.favourite_content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.favourite_content h1 {
+  font-weight: 800;
+  font-size:30px;
+  text-align: center;
+  color: var(--main-black);
+}
+
+.favourite_content p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #747171;
+}
+
+.fav_btn {
+  display: none;
+}
+
+/* error */
+.errorContainer {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.errorHeading {
+  color: #721c24;
+}
+
+.errorMessage {
+  color: #721c24;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.errorDescription {
+  color: #721c24;
+  margin-top: 20px;
+}
+
+.errorLink {
+  margin-top: 20px;
+}
+
+.errorLink a {
+  color: #155724;
+  text-decoration: underline;
+}
+
+
+
+/* media query */
+
+@media screen and (min-width: 568px) {
+  .offer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .section {
+    margin-block-start: 120px;
+  }
+  
+  .container {
+    padding: 10px 40px;
+  }
+
+
+  .hero_content h1 {
+    text-align: left;
+    color: #3B3C3D;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 55px;
+  }
+
+  .hero_content p {
+    text-align: left;
+    color: #747171;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    margin-block: 15px;
+  }
+
+
+  .hero {
+      flex-direction: row; /* Align items side by side on larger screens */
+      align-items: center; /* Center items vertically */
+      width: 100%;
+  }
+
+  .hero_img,
+  .hero_content {
+      flex: 1; /* Equal distribution of space for both image and content */
+  }
+
+  .hero_img {
+    width: 565px;
+    height: 348.98px;
+  }
+
+  .hero_img img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* banner */
+  .banner {
+    max-width: 762px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .banner p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    color: #747171;
+  }
+
+  .banner h1 {
+    font-weight: 800;
+    size: 50px;
+  }
+  /* offers */
+  .offers {
+    width: 100%;
+    background-color: #F2FBFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .offer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .offer_content h2 {
+    font-weight: 700;
+    font-size: 21px;
+    color: #3B3C3D;
+  }
+  
+  .offer_content p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #747171;
+  }
+
+  .carosel {
+    margin-inline: 50px;
+  }
+
+  /* favourite */
+
+  .favourites {
+   display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .favourite-img {
+    width: 474px;
+    height: 474px;
+  }
+
+  .favourite_content {
+    gap: 10px;
+  }
+
+
+  .favourite_content h1 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .favourite_content p {
+    line-height: 25px;
+    text-align: left;
+    line-break: loose;
+  }
+
+
+
+  .fav_btn {
+    display: block;
+  }
+
+  
+}
+
+

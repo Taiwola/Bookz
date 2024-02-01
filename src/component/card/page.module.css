@@ -1,0 +1,95 @@
+.card_body {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 367px;
+}
+
+
+
+.book_card {
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 15px;
+}
+
+.book_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_content h2 {
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+.book_content p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.star {
+    color: var(--primary-color);
+}
+
+.book_content p span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.book_tags {
+    display: flex;
+    gap: 6px;
+}
+
+.tag {
+    background-color: #F3FAFF;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.book_description p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #747171;
+}
+
+.book_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.book_prices {
+    display: flex;
+    gap: 5px;
+}
+
+.current_price {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--main-black);
+}
+
+.prev_price {
+    color: #747171;
+    display: inline-flex;
+    font-size: 12px;
+    text-decoration: line-through;
+    align-items: center;
+}

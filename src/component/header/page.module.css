@@ -1,0 +1,156 @@
+:root {
+    --header-height: 3rem;
+    --z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --nav-name-font-size: 1rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+.bd_grid {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.header_logo {
+    display: inline-flex;
+}
+
+.span {
+    color: var(--primary-color)
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 1rem;
+    background-color: #FFFFFF;
+    z-index: var(--z-index);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+}
+
+.header_toggle {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+
+/* nav */
+@media screen and (max-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+        padding: 2rem 0;
+        z-index: var(--z-index);
+        transition: .5s;
+        overflow-y: auto;
+    }
+}
+
+.nav_content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav_item {
+    margin-bottom: 2rem;
+}
+
+.nav_link {
+    color: var(--primary-color);
+}
+
+.nav_btn {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.show {
+    left: 0;
+}
+
+
+/* media queries */
+@media screen and (min-width: 576px) {
+    .nav {
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding: 10px 60px;
+    }
+
+    .bd_grid {
+        margin: 0;
+    }
+
+ .header_toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .nav_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Remove width: 100%; */
+    }
+    
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        /* Remove width: 100%; */
+        margin: 0; /* Reset margin to ensure there's no unexpected spacing */
+    }
+    
+    .nav_item {
+        margin: 0; /* Reset margin for list items */
+    }
+    
+    /* Optional: If you want the list items horizontally aligned */
+    .nav_list li {
+        list-style: none; /* Remove default list styles */
+        margin-right: 10px; /* Adjust as needed for spacing between items */
+    }
+    
+    .nav_btn {
+        margin-inline-start: 20px;
+    }
+    
+    
+}

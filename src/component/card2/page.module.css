@@ -1,0 +1,98 @@
+.card_body {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 255px;
+    transition: background-color 0.3s ease-in-out; /* Add transition for background-color */
+}
+
+.book_card {
+    border: 1px solid #ddd;
+    border-radius: 0 0 15px 15px;
+    padding: 5px 15px;
+    transition: border-radius 0.3s ease-in-out, padding 0.3s ease-in-out; /* Add transition for border-radius and padding */
+}
+
+.book_details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: gap 0.3s ease-in-out; /* Add transition for gap */
+}
+
+.book_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: justify-content 0.3s ease-in-out; /* Add transition for justify-content */
+}
+
+.book_content h2 {
+    font-size: 16px;
+    font-weight: 700;
+    transition: font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out; /* Add transition for font-size and font-weight */
+}
+
+.book_content p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    transition: display 0.3s ease-in-out, align-items 0.3s ease-in-out, gap 0.3s ease-in-out; /* Add transition for display, align-items, and gap */
+}
+
+.star {
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out; /* Add transition for color */
+}
+
+.book_content p span {
+    font-weight: 500;
+    font-size: 16px;
+    transition: font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Add transition for font-weight and font-size */
+}
+
+.book_description p {
+    font-weight: 600;
+    font-size: 12px;
+    color: #747171;
+    transition: font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for font-weight, font-size, and color */
+}
+
+.book_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: justify-content 0.3s ease-in-out; /* Add transition for justify-content */
+}
+
+.book_prices {
+    display: flex;
+    gap: 3px;
+    transition: display 0.3s ease-in-out, gap 0.3s ease-in-out; /* Add transition for display and gap */
+}
+
+.current_price {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-black);
+    transition: font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for font-weight, font-size, and color */
+}
+
+.prev_price {
+    text-decoration: line-through;
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: text-decoration 0.3s ease-in-out, font-size 0.3s ease-in-out, display 0.3s ease-in-out, align-items 0.3s ease-in-out; /* Add transition for text-decoration, font-size, display, and align-items */
+}
+
+.btn {
+    background-color: var(--primary-color);
+    padding: 4px 10px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for background-color, padding, and color */
+}

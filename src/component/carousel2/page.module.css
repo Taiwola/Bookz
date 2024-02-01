@@ -1,0 +1,78 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: transform 0.3s ease;; /* Add transition for sliding effect */
+}
+
+.carousel_container {
+    position: relative;
+}
+
+
+.controls {
+    bottom: 10px; /* Adjust the bottom spacing as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Add space between buttons */
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.slideActive {
+    flex: 0 0 auto;
+}
+
+.slideInactive {
+    display: none;
+}
+
+
+.slideActive,
+.slideInactive {
+    flex: 0 0 calc(100% / 4 - 16px); /* Adjust width based on the number of items */
+    margin-right: 16px; /* Add margin between items */
+    transition: flex 0.3s ease, margin-right 0.3s ease; /* Add transition for flex and margin-right properties */
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .carousel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; /* Ensure cards stay in a row for larger screens */
+        overflow: hidden; /* Display overflowing cards on larger screens */
+        transition: transform 0.3s ease;
+    }
+
+    .slideActive {
+        flex: 0 0 calc(33.33% - 16px); /* 3 cards in a row with some margin */
+        margin-right: 10px;
+    }
+
+    .slideInactive {
+        display: flex;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center; /* Add space between buttons */
+        margin-top: 30px; /* Adjust the top spacing as needed */
+        gap: 50px;
+    }
+
+    
+.slideActive,
+.slideInactive {
+    flex: 0 0 calc(100% / 4 - 16px); /* Adjust width based on the number of items */
+    margin-right: 16px; /* Add margin between items */
+    transition: flex 0.3s ease, margin-right 0.3s ease; /* Add transition for flex and margin-right properties */
+}
+}
