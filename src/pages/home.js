@@ -133,10 +133,9 @@ const Home = () => {
                 </div>
 
                 {/* categories */}
-                <div className="container">
-                    <div className="categories">
-                        <CategoryList />
-                    </div>
+
+                <div className="categories">
+                    <CategoryList />
                 </div>
             </main>
         </section>
