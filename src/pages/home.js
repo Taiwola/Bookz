@@ -47,7 +47,7 @@ const Home = () => {
                         <div className="offer_container">
                             <div className="offer_content">
                                 <div className="offer_img">
-                                    <img src="/images/bolt2.png" />
+                                    <img src="/images/bolt2.png" alt="bolt" />
                                 </div>
                                 <h2>
                                     Fast Delivery
@@ -59,7 +59,7 @@ const Home = () => {
 
                             <div className="offer_content">
                                 <div className="offer_img">
-                                    <img src="/images/thumb2.png" />
+                                    <img src="/images/thumb2.png" alt="thumb" />
                                 </div>
                                 <h2>
                                     Best Quality
@@ -71,7 +71,7 @@ const Home = () => {
 
                             <div className="offer_content">
                                 <div className="offer_img">
-                                    <img src="/images/secure2.png" />
+                                    <img src="/images/secure2.png" alt="secure" />
                                 </div>
                                 <h2>
                                     Secured Payment
@@ -82,7 +82,7 @@ const Home = () => {
                             </div>
                             <div className="offer_content">
                                 <div className="offer_img">
-                                    <img src="/images/star.png" />
+                                    <img src="/images/star.png" alt="star" />
                                 </div>
                                 <h2>
                                     Best Ratings
@@ -107,7 +107,7 @@ const Home = () => {
                 <div className="container">
                     <div className="favourites">
                         <div className="favourite-img">
-                            <img src="/images/books.png" />
+                            <img src="/images/books.png" alt="book" />
                         </div>
                         <div className="favourite_content">
                             <h1>Find your next favorite read from our carefully curated book collection.</h1>

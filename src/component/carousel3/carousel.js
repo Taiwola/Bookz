@@ -63,10 +63,10 @@ const CarouselThird = () => {
 
             <div className={styles.controls}>
                 <button className={styles.button} onClick={prevImage}>
-                    <img src='/images/G200.png' />
+                    <img src='/images/G200.png' alt="prev" />
                 </button>
                 <button className={styles.button} onClick={nextImage}>
-                    <img src='/images/G201.png' />
+                    <img src='/images/G201.png' alt="next" />
                 </button>
             </div>
         </div>
