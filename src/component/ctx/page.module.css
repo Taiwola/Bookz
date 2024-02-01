@@ -1,0 +1,78 @@
+.call_body {
+    background-image: url("/public/images/background.png");
+    padding-inline: 50px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.call_heading h3{
+    font-weight: 600;
+    color: #FAF8F8;
+    font-size: 16px;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+}
+
+.input input {
+    width: calc(100% - 15px); /* Adjusted width for padding and button space */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #FAF8F8;
+}
+
+
+.input input::placeholder {
+    color: #FAF8F8;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.input button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3FB2E5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px; /* Adjusted padding for button */
+    height: 100%; /* Make the button take the full height of the input */
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .call_body {
+        display: flex;
+        flex-direction: row;
+        padding-block: 80px;
+        padding-inline: 40px;
+    }
+    
+    .call_heading h3{
+        font-weight: 600;
+        color: #FAF8F8;
+        font-size: 37px;
+    }
+
+    .input input {
+        padding-block: 20px;
+    }
+
+    .input button {
+        height: 65px;
+    }
+
+    .input input::placeholder {
+        color: #FAF8F8;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}

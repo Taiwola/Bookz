@@ -4,6 +4,9 @@ import React from "react";
 import Button from "../component/button/button";
 import Carousel from "../component/carousel/carouselComponent";
 import CarouselSecond from "../component/carousel2/carousel2";
+import CarouselThird from "../component/carousel3/carousel";
+import Ctx from "../component/ctx/ctx";
+import CategoryList from "../component/category/categorylist";
 
 const Home = () => {
     return (
@@ -120,7 +123,19 @@ const Home = () => {
                 {/* acknowledgement */}
                 <div className="container">
                     <div className="acknowledgement">
+                        <CarouselThird />
+                    </div>
+                </div>
 
+                {/* call to action */}
+                <div className="ctx">
+                    <Ctx />
+                </div>
+
+                {/* categories */}
+                <div className="container">
+                    <div className="categories">
+                        <CategoryList />
                     </div>
                 </div>
             </main>

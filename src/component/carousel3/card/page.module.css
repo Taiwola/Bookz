@@ -1,0 +1,107 @@
+.card_body {
+    background-color: #F2FBFF;
+    width: 303px;
+    height: 224px;
+    border-radius: 8px;
+    position: relative;
+    padding-top: 40px;
+    padding-inline: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img_container {
+    position: absolute;
+    top: -25px;
+    left: 14px;
+    width: 74px;
+    height: 74px;
+    z-index: 100000;
+}
+
+.img_body {
+    width: 100%; /* Make the image fill its container */
+    height: 100%;
+    border-radius: 8px; /* Adjust border-radius to match card_body */
+    object-fit: cover; /* Preserve aspect ratio and cover the container */
+    z-index: 100000;
+}
+.card_content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.card_h p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px; /* Adjusted line height */
+    text-align: left;
+    display: flex; /* Changed inline-flex to flex */
+    flex-direction: column;
+    gap: 0;
+}
+
+.card_h p span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card_para {
+    display: flex;
+    align-items: center; /* Center align items in flex container */
+    justify-content: space-between;
+}
+
+.card_para img {
+    margin-right: 5px; /* Add some spacing between image and rating */
+}
+
+.card_rating {
+    display: flex;
+    align-items: center;
+}
+
+.card_rating img {
+    margin-right: 5px; /* Add some spacing between image and rating */
+}
+
+.card_rating p {
+    margin: 0; /* Remove default margin on the paragraph element */
+}
+
+.card_rating p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .card_body {
+        width: 368px;
+        height: 327px;
+    }
+
+    .card_content p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .card_h p {
+        font-weight: 800;
+        size: 20px;
+    }
+
+    .card_h p span {
+        font-weight: 600;
+        font-size: 16px;
+        color: #747171;
+    }
+}

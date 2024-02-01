@@ -92,7 +92,7 @@ code {
 .hero_content {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 17px;
 }
 
 .hero_content h1, .banner h1 {
@@ -214,6 +214,17 @@ code {
 
 .fav_btn {
   display: none;
+}
+
+/*  */
+.acknowledgement {
+  margin-top: 30px;
+}
+
+/* ctx */
+.ctx {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* error */
@@ -400,7 +411,10 @@ code {
     display: block;
   }
 
-  
+  /* acknowledgement */
+  .acknowledgement {
+    margin-top: 60px
+  }
 }
 
 
